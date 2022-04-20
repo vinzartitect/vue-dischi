@@ -4,7 +4,16 @@
 
        <section>
 
-           <DiskCard/>
+           <!-- v-for che cicla i dati dell api -->
+           <!-- con il v-bind mando al figlio i singoli dati -->
+           <DiskCard
+           v-for="( element, index ) in diskArray"
+           :key="index"
+           :poster="element.poster"
+           :title="element.title"
+           :author="element.author"
+           :year="element.year"
+           />
 
        </section>
 
@@ -49,5 +58,15 @@ export default {
 
 
 <style scoped lang="scss">
+
+main {
+    section {
+        width: 65%;
+        margin: 50px auto 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
 
 </style>

@@ -41,7 +41,7 @@ export default {
   width: 100vw;
 
   .logo-bar {
-    height: 70px;
+    height: 8%;
     padding: 10px 20px;
     background-color: #2e3a46;
 
