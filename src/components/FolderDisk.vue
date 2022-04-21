@@ -2,6 +2,8 @@
 
    <main>
 
+       <GenreSelection/>
+
        <section>
 
            <!-- v-for che cicla i dati dell api -->
@@ -25,6 +27,7 @@
 
 <script>
 import DiskCard from '@/components/DiskCard.vue';
+import GenreSelection from '@/components/GenreSelection.vue';
 
 import axios from "axios";
 
@@ -32,6 +35,7 @@ export default {
     name: 'FolderDisk',
     components: {
         DiskCard,
+        GenreSelection,
     },
     data(){
         return{
@@ -61,8 +65,8 @@ export default {
 
 main {
     section {
-        width: 65%;
-        margin: 50px auto 0;
+        width: 60%;
+        margin: 30px auto 0;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;

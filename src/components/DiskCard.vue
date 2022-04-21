@@ -27,7 +27,7 @@ export default {
         width: calc(20% - 40px);
         background-color: #2e3a46;
         margin: 0 20px 30px;
-        padding: 20px;
+        padding: 20px 20px 5px 20px;
         text-align: center;
         transition: all .1s ease;
         cursor: pointer;
